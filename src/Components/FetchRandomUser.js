@@ -25,7 +25,11 @@ class FetchRandomUser extends Component {
                     {this.state.loading || !this.state.person ? (
                     <div>Loading...</div>
                     ) : ( 
-                    <div>{this.state.person.name.first + ' ' + this.state.person.name.last} </div> 
+                    <div>
+                        <div>{this.state.person.name.first} </div>
+                        <div>{this.state.person.name.last}</div>
+                        <div>{this.state.person.email}</div>
+                    </div>
                     )}
                 </div>
             </>
