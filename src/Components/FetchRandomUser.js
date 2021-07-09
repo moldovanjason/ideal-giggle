@@ -15,20 +15,18 @@ class FetchRandomUser extends Component {
         const response = await fetch(url);
         const data = await response.json();
         this.setState({person: data.results[0], loading:false });
-        console.log(data)
     }
     
     render() {
         return (
             <>
                 <div className="second">
-                    {this.state.loading || !this.state.person ? (
-                    <div>Loading...</div>
-                    ) : ( 
+                    {this.state.loading || !this.state.person ? (<div>Loading...</div>) : ( 
                     <div>
                         <div>{this.state.person.name.first} </div>
                         <div>{this.state.person.name.last}</div>
                         <div>{this.state.person.email}</div>
+                        <div>{this.state.person.password}</div>
                     </div>
                     )}
                 </div>
