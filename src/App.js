@@ -7,6 +7,7 @@ import './App.css';
 // import UseEffect from './Components/UseEffect';
 // import UseRef from './Components/UseRef';
 // import UseContext from './Components/UseContext';
+import Javascript from './Components/Javascript';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <UseEffect/>
       <UseRef/>
       <UseContext/> */}
+      <Javascript/>
     </div>
   );
 }
