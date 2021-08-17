@@ -1,40 +1,22 @@
 .App {
-  text-align: center;
-  background:coral;
-  height: 500px;
-}
-
-.first {
-  padding: 10px;
-  background-color: rgb(44, 44, 44);
-  color: white;
-}
-
-.second{
-  background: rgb(95, 95, 95);
-  padding: 20px;
-  color: white;
-}
-
-.form{
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 40px;
   align-items: center;
-  align-content: center;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
 }
 
-.input{
-  margin: 10px;
+.App .openModalBtn {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(75, 138, 255);
+  color: white;
+  cursor: pointer;
 }
-
-.label{
-  font-size: 30px;
-  font-weight: 400;
-}
-
-.title{
-  font-size: 50px;
-  font-weight: 600;
+body {
+  padding: 0;
+  margin: 0;
 }

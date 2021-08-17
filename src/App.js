@@ -1,27 +1,16 @@
 import './App.css';
-// import Clicker from './Components/Clicker';
-// import FetchRandomUser from './Components/FetchRandomUser';
-// import MovieList from './Components/MovieList';
-// import UseState from './Components/UseState';
-// import UseReducer from './Components/UseReducer';
-// import UseEffect from './Components/UseEffect';
-// import UseRef from './Components/UseRef';
-// import UseContext from './Components/UseContext';
-import Javascript from './Components/Javascript';
-
+import Modal from './Components/Modal';
+import React, { useState } from "react";
 
 function App() {
+  const [openModal, setOpenModal] = useState(false)
+
   return (
     <div className="App">
-      {/* <Clicker/>
-      <FetchRandomUser />
-      <MovieList/> 
-      <UseState/> 
-      <UseReducer/>
-      <UseEffect/>
-      <UseRef/>
-      <UseContext/> */}
-      <Javascript/>
+      <h1>Hey, click the button to open the modal.</h1>
+      <button className="openModalBtn" onClick={() => setOpenModal(true)}>Open</button>
+      {openModal && <Modal closeModal={setOpenModal} />}
+      <div className="moreStuff">More Stuff to be added soon!</div>
     </div>
   );
 }
